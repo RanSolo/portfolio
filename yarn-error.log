@@ -1,0 +1,49 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.7.0/libexec/bin/yarn.js dev
+
+PATH: 
+  /Applications/Postgres.app/Contents/Versions/latest/bin:/Users/XWINGFIGHTER/pear/bin:/usr/local/bin:/usr/local/git/bin:/usr/local/node/bin::/usr/local/redis/bin:/Users/XWINGFIGHTER/.rvm/gems/ruby-2.2.0/bin:/Users/XWINGFIGHTER/.rvm/gems/ruby-2.2.0@global/bin:/Users/XWINGFIGHTER/.rvm/rubies/ruby-2.2.0/bin:/Library/PostgreSQL/9.2/bin/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/Users/XWINGFIGHTER/.rvm/bin:/usr/local/bin:/Users/XWINGFIGHTER/pear/bin:/usr/local/bin:/usr/local/git/bin:/usr/local/node/bin::/usr/local/redis/bin:/Users/XWINGFIGHTER/.rvm/gems/ruby-2.2.0/bin:/Users/XWINGFIGHTER/.rvm/gems/ruby-2.2.0@global/bin:/Users/XWINGFIGHTER/.rvm/rubies/ruby-2.2.0/bin:/Library/PostgreSQL/9.2/bin/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/Users/XWINGFIGHTER/.rvm/bin
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  10.7.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/XWINGFIGHTER/Documents/Code/portfolio/package.json: Unexpected token 
+   in JSON at position 348
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:1130:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:98:30)
+      at /usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:109:13
+
+npm manifest: 
+  {
+    "name": "example-create-react-app-express",
+    "version": "1.0.0",
+    "scripts": {
+      "client": "cd client && yarn start",
+      "server": "nodemon server.js",
+      "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+      "start": "node server.js",
+      "heroku-postbuild": "cd client && npm install && npm install --only=dev
+                           --no-shrinkwrap && npm run build"
+    },
+    "dependencies": {
+      "express": "^4.16.2"
+    },
+    "devDependencies": {
+      "concurrently": "^3.5.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
